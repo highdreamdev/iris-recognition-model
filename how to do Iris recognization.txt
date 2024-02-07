@@ -1,0 +1,7 @@
+Commonly, an iris recognition system consists of five steps: acquisition of the iris image, segmentation of the iris region, normalization of the segmented region, feature extraction from normalized region, and matching.
+
+-In the first step, the iris image is acquired using a suitable scanner where user cooperation is required to ensure the acquisition of high-quality images. 
+- In the second step, the inner and outer boundaries of the iris are located, and the non-iris regions caused by other noise factors such as the upper and the lower eyelashes, the pupil, and the specular reflections are removed. 
+- In the third step, the output segmented region is transformed from its circular shape to a rectangular shape to simplify the processing of the next step. 
+- The fourth step which called feature extraction is performed on the pure normalized iris region to extract the unique iris features. The output of this step is called iris template or iris code. The iris template is a binary array with a certain size and a mask array with the same size to exclude the non-iris pixels from the matching processes. 
+- In the fifth step, the output iris template is compared with other previously stored templates using Hamming Distance (HD) to check if they belong to the same person or not .
